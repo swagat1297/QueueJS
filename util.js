@@ -11,6 +11,16 @@ class Queue {
         console.log(`For position ${this.count} enqueue: ${newElements} `);
         this.count++;
     }
+    //to dequeue elements
+    dequeue = () => {
+        if (this.elements.length == 0) {
+            console.log(`empty queue`);
+        }
+        else { }
+        console.log(`Deleted item is ${this.elements[0]}`);
+        this.elements.shift();//to shift all value//
+    }
+
 
 }
 

@@ -20,6 +20,15 @@ class Queue {
         console.log(`Deleted item is ${this.elements[0]}`);
         this.elements.shift();//to shift all value//
     }
+    //to print all value
+    printQueue = () => {
+        if (this.elements.length == 0) {
+            console.log("empty queue");
+        }
+        else {
+            console.log(`${this.elements} for position 1 to ${this.elements.length}`);
+        }
+    }
 
 
 }
